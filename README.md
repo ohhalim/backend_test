@@ -122,21 +122,25 @@ AI 리뷰
 개선된 사항
 
 username과 nickname에 대한 최소 길이 제한 추가 
-
 MinLengthValidator를 통한 동일한 닉네임이 없게 만들었습니다.
+
+
 <img src="images/modelscode.png" width="400">
 
 ### Serializers
 <img src="images/serializers.png" width="400">
 개선된 사항
 
-
 비밀번호 2차 확인 추가 및 에러 상세 메세지를 추가 했습니다.
+
+
 <img src="images/serializerscode.png" width="400">
 
 ### Views
 <img src="images/views.png" width="400">
 개선된 사항
+
+
 <img src="images/viewscode.png" width="400">
 
 ### 마무리
