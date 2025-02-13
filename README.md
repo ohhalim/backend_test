@@ -61,15 +61,17 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 ### 유닛 테스트 작성
 
 - [x] Pytest를 이용한 JWT Unit 테스트 코드 작성해보기
-
 테스트 코드 확인
+
+
 <img src="images/jwt_test.png" width="400">
 
 ### 테스트 완성
 
 - [x] 백엔드 유닛 테스트 완성하기
-
 포스트맨 확인
+
+
 <img src="images/postmantest.png" width="400">
 <img src="images/postmantest2.png" width="400">
 
