@@ -120,6 +120,8 @@ AI 리뷰
 ### Models
 <img src="images/models.png" width="400">
 개선된 사항
+username과 nickname에 대한 최소 길이 제한 추가 
+MinLengthValidator를 통한 동일한 닉네임이 없게 만들었습니다.
 <img src="images/modelscode.png" width="400">
 
 ### Serializers
