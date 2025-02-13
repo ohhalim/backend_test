@@ -52,7 +52,7 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 
 - [x] Access / Refresh Token 발행과 검증에 관한 테스트 시나리오 작성하기
 
-![JWT 테스트 코드](images/jwt_testcode.png)
+<img src="images/jwt_testcode.png" width="400">
 
 자세한 내용은 test.py 작성해 놓았습니다.
 
@@ -63,29 +63,29 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 - [x] Pytest를 이용한 JWT Unit 테스트 코드 작성해보기
 
 테스트 코드 확인
-![JWT 테스트 결과](images/jwt_test.png)
-
-## PR 날려보기
-
-- [x] PR 날려보기
-![PR 스크린샷 1](images/pr.png)
-![PR 스크린샷 2](images/pr2.png)
-
-## 도커를 통한 ec2 배포
+<img src="images/jwt_test.png" width="400">
 
 ### 테스트 완성
 
-- [ ] 백엔드 유닛 테스트 완성하기
+- [x] 백엔드 유닛 테스트 완성하기
 
 포스트맨 확인
-![Postman 테스트 1](images/postmantest.png)
-![Postman 테스트 2](images/postmantest2.png)
+<img src="images/postmantest.png" width="400">
+<img src="images/postmantest2.png" width="400">
 
 ### 로직 작성
 
 - [x] 회원가입 - /signup
 - [x] 로그인 - /login
 - [x] EC2에 배포해보기
+
+## PR 날려보기
+
+- [x] PR 날려보기
+<img src="images/pr.png" width="400">
+<img src="images/pr2.png" width="400">
+
+## 도커를 통한 ec2 배포
 
 http://3.36.66.35:8000/swagger/
 
@@ -96,13 +96,13 @@ http://3.36.66.35:8000/swagger/
 - [x] Swagger UI로 접속 가능하게 하기
 
 1. 서버 작동 테스트
-![서버 작동 테스트](images/url.gif)
+<img src="images/url.gif" width="400">
 
 2. 회원가입 테스트
-![회원가입 테스트](images/signup.gif)
+<img src="images/signup.gif" width="400">
 
 3. 로그인 테스트
-![로그인 테스트](images/login.gif)
+<img src="images/login.gif" width="400">
 
 ## ai-code-rewiew-refactoring
 
@@ -111,19 +111,19 @@ http://3.36.66.35:8000/swagger/
 AI 리뷰
 
 ### Models
-![Models 리뷰](images/models.png)
+<img src="images/models.png" width="400">
 개선된 사항
-![Models 개선 코드](images/modelscode.png)
+<img src="images/modelscode.png" width="400">
 
 ### Serializers
-![Serializers 리뷰](images/serializers.png)
+<img src="images/serializers.png" width="400">
 개선된 사항
-![Serializers 개선 코드](images/serializerscode.png)
+<img src="images/serializerscode.png" width="400">
 
 ### Views
-![Views 리뷰](images/views.png)
+<img src="images/views.png" width="400">
 개선된 사항
-![Views 개선 코드](images/viewscode.png)
+<img src="images/viewscode.png" width="400">
 
 ### 마무리
 
