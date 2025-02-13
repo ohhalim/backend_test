@@ -2,11 +2,10 @@ import pytest
 from django.test import TestCase
 import jwt
 from datetime import datetime, timedelta
-from .views import JWTManager  # JWTManager 클래스를 import
+from .views import JWTManager 
 
 # 테스트 실행
 # pytest accounts/tests.py -v 
-
 
 class TestJWTToken(TestCase):
     def setUp(self):
