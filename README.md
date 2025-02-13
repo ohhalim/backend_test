@@ -22,7 +22,7 @@ http://3.36.66.35:8000/swagger/
 ## 배포완료 테스트 GIF
 
 1. 서버 작동 테스트
-![images](images/pr.gif)
+![images](images/url.gif)
 
 2. 회원가입 테스트
 ![images](images/signup.gif)
@@ -30,3 +30,10 @@ http://3.36.66.35:8000/swagger/
 3. 로그인 테스트
 ![images](images/login.gif)
 
+**Refactoring**
+
+- [ ]  피드백 받아서 코드 개선하기
+
+**마무리**
+
+- [ ]  AWS EC2 재배포하기
