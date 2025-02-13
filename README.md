@@ -48,19 +48,22 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 디코딩하면 내용을 읽을 수 있는 특징이 있다.
 이러한 이유로 보통 Access Token과 Refresh Token의 두 가지 토큰을 함께 사용한다.
 
-### 토큰 발행과 유효성 확인
-
-- [x] Access / Refresh Token 발행과 검증에 관한 테스트 시나리오 작성하기
-
-<img src="images/jwt_testcode.png" width="400">
-
-자세한 내용은 test.py 작성해 놓았습니다.
 
 ## 유닛 테스트
 
 ### 유닛 테스트 작성
 
+#### 토큰 발행과 유효성 확인
+
+- [x] Access / Refresh Token 발행과 검증에 관한 테스트 시나리오 작성하기
+
 - [x] Pytest를 이용한 JWT Unit 테스트 코드 작성해보기
+
+<img src="images/jwt_testcode.png" width="400">
+
+자세한 내용은 test.py 작성해 놓았습니다.
+
+
 테스트 코드 확인
 
 
@@ -69,6 +72,8 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 ### 테스트 완성
 
 - [x] 백엔드 유닛 테스트 완성하기
+
+
 포스트맨 확인
 
 
