@@ -1,3 +1,4 @@
+pytest
 # Backend_Test
 
 - [ ]  Pytest를 이용한 테스트 코드 작성법 이해
@@ -38,3 +39,5 @@ http://3.36.66.35:8000/swagger/
 **마무리**
 
 - [ ]  AWS EC2 재배포하기
+# backend_test
+main
