@@ -11,9 +11,39 @@ from django.shortcuts import get_object_or_404
 import jwt
 from datetime import datetime, timedelta
 
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 User = get_user_model()
 
+# swagger 회원가입 창
+@swagger_auto_schema(
+    method='post',
+    request_body=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        required=['username', 'password', 'nickname'],
+        properties={
+            'username': openapi.Schema(type=openapi.TYPE_STRING, description='사용자 아이디'),
+            'password': openapi.Schema(type=openapi.TYPE_STRING, description='비밀번호'),
+            'nickname': openapi.Schema(type=openapi.TYPE_STRING, description='닉네임'),
+        }
+    ),
+    responses={
+        201: openapi.Response(
+            description="회원가입 성공",
+            examples={
+                "application/json": {
+                    "username": "사용자명",
+                    "nickname": "닉네임",
+                    "roles": [{"role": "USER"}]
+                }
+            }
+        ),
+        400: "Bad Request"
+    }
+)
+
+# 여기서 부터 회원가입 로직
 @api_view(['POST'])
 @authentication_classes([])      # 전역 인증 설정 무시
 @permission_classes([AllowAny])  # 전역 IsAuthenticated 설정 무시
@@ -32,6 +62,34 @@ def signup(request):
         }, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+
+
+# swagger 로그인 창
+@swagger_auto_schema(
+    method='post',
+    request_body=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        required=['username', 'password'],
+        properties={
+            'username': openapi.Schema(type=openapi.TYPE_STRING, description='사용자 아이디'),
+            'password': openapi.Schema(type=openapi.TYPE_STRING, description='비밀번호'),
+        }
+    ),
+    responses={
+        200: openapi.Response(
+            description="로그인 성공",
+            examples={
+                "application/json": {
+                    "token": "JWT 토큰 문자열"
+                }
+            }
+        ),
+        400: "Invalid username/password"
+    }
+)
+
+# 여기서 부터 로그인 로직
 @api_view(['POST'])
 @authentication_classes([])      # 전역 인증 설정 무시
 @permission_classes([AllowAny])  # 전역 IsAuthenticated 설정 무시
