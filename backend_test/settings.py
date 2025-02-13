@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-rxfews@fguy8+u9z@@!u-yqfdtjyw)vnk-@(-(c46aij)g!h07
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '3.36.66.35']
 
 
 # Application definition
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # 문서 자동화 프레임워크
+    'drf_yasg',
     
      # DRF
     'rest_framework',
