@@ -10,6 +10,7 @@
 
 - [ ]  PR 날려보기
 ![images](images/pr.png)
+![images](images/pr2.png)
 
 - [ ]  리뷰 바탕으로 개선하기
 
