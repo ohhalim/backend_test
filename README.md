@@ -1,16 +1,17 @@
 # Backend_Test
 
 ## 📖 목차 
-1. [Django, jwt 기본 이해](#Django기본 이해) 
+1. [Django, jwt 기본 이해](#Django, jwt 기본 이해) 
 2. [유닛 테스트](#유닛_테스트) 
 3. [PR 날려보기](PR_날려보기)
-6. [도커를 통한 ec2 배포](#배포완료)
+6. [도커를 통한 ec2 배포](#도커를_통한_ec2_배포)
 7. [ai_code_rewiew_Refactoring](#Refactoring)
 
 -------
-**Django기본 이해**
+## Django, jwt 기본 이해
 
 - [x]  Middleware란 무엇인가? (with Decorators)
+
 미들웨어는 Django의 요청/응답 처리를 위한 중간 처리 로직이다 .
 
 주요 사용 사례는 사용자 권한 확인, 에러 처리, CORS 관리가 있다.
@@ -74,6 +75,7 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 자세한 내용은 test.py 작성해 놓았습니다.
 
 
+## 유닛 테스트
 -----------
 **유닛 테스트 작성**
 
@@ -81,17 +83,17 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 - [x]  Pytest를 이용한 JWT Unit 테스트 코드 작성해보기
 테스트 코드 확인
 ![images](images/jwt_test.png)
------------
 
-**PR 날려보기**
+
+-----------
+## PR 날려보기
 
 - [x]  PR 날려보기
 ![images](images/pr.png)
 ![images](images/pr2.png)
 
------------
 
-### 백엔드 배포하기
+## 도커를 통한 ec2 배포
 
 
 **테스트 완성**
@@ -111,7 +113,6 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 
 - [x]  EC2에 배포해보기
 
------------
 
 http://3.36.66.35:8000/swagger/ 
 
@@ -133,7 +134,7 @@ http://3.36.66.35:8000/swagger/
 
 ----------- 
 
-**Refactoring**
+## Refactoring
 
 - [x] AI 피드백 리뷰 받아서 코드 개선하기
 
