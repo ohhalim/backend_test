@@ -29,20 +29,45 @@ User = get_user_model()
         }
     ),
     responses={
-        201: openapi.Response(
-            description="회원가입 성공",
-            examples={
-                "application/json": {
-                    "username": "사용자명",
-                    "nickname": "닉네임",
-                    "roles": [{"role": "USER"}]
-                }
+        status.HTTP_201_CREATED: openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'username': openapi.Schema(
+                    type=openapi.TYPE_STRING,
+                    example="user123",
+                    description='사용자 아이디'
+                ),
+                'nickname': openapi.Schema(
+                    type=openapi.TYPE_STRING,
+                    example="닉네임123",
+                    description='닉네임'
+                ),
+                'roles': openapi.Schema(
+                    type=openapi.TYPE_ARRAY,
+                    items=openapi.Schema(
+                        type=openapi.TYPE_OBJECT,
+                        properties={
+                            'role': openapi.Schema(
+                                type=openapi.TYPE_STRING,
+                                example="USER"
+                            )
+                        }
+                    )
+                )
             }
         ),
-        400: "Bad Request"
+        status.HTTP_400_BAD_REQUEST: openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'error': openapi.Schema(
+                    type=openapi.TYPE_STRING,
+                    example="잘못된 요청입니다.",
+                    description='에러 메시지'
+                )
+            }
+        )
     }
 )
-
 # 여기서 부터 회원가입 로직
 @api_view(['POST'])
 @authentication_classes([])      # 전역 인증 설정 무시
@@ -77,15 +102,26 @@ def signup(request):
         }
     ),
     responses={
-        200: openapi.Response(
-            description="로그인 성공",
-            examples={
-                "application/json": {
-                    "token": "JWT 토큰 문자열"
-                }
+        status.HTTP_200_OK: openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'token': openapi.Schema(
+                    type=openapi.TYPE_STRING,
+                    example="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...",
+                    description='JWT 액세스 토큰'
+                )
             }
         ),
-        400: "Invalid username/password"
+        status.HTTP_400_BAD_REQUEST: openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'error': openapi.Schema(
+                    type=openapi.TYPE_STRING,
+                    example="사용자명 또는 비밀번호가 올바르지 않습니다.",
+                    description='에러 메시지'
+                )
+            }
+        )
     }
 )
 
