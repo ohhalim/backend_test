@@ -47,20 +47,40 @@ views
 
 
 
+**Django기본 이해**
 
-- [ ]  Pytest를 이용한 테스트 코드 작성법 이해
+- [ ]  Middleware란 무엇인가? (with Decorators)
+- [ ]  Django란?
 
-- [ ]  Django를 이용한 인증과 권한 이해
+**JWT 기본 이해**
 
+- [ ]  JWT란 무엇인가요?
 
-- [ ]  JWT와 구체적인 알고리즘의 이해
+### 시나리오 설계 및 코딩 시작!
 
+**토큰 발행과 유효성 확인**
+
+- [ ]  Access / Refresh Token 발행과 검증에 관한 테스트 시나리오 작성하기
+
+**유닛 테스트 작성**
+
+- [ ]  Pytest를 이용한 JWT Unit 테스트 코드 작성해보기
+
+**PR 날려보기**
 
 - [ ]  PR 날려보기
-![images](images/pr.png)git 
+![images](images/pr.png)
 ![images](images/pr2.png)
 
+### 백엔드 배포하기
+
+**테스트 완성**
+
+- [ ]  백엔드 유닛 테스트 완성하기
+
+**로직 작성**
 
 
+- [ ] 회원가입 - /signup
 
-
+- [ ] 로그인 - /login
