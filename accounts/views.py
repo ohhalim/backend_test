@@ -16,6 +16,7 @@ from drf_yasg import openapi
 
 User = get_user_model()
 
+# AuthService 클래스를 추가해 뷰 함수와 비즈니스 로직을 분리하는 리팩토링을 시행했습니다.
 class AuthService:
     @staticmethod
     def signup(data: dict) -> User:

@@ -89,6 +89,14 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 ## PR 날려보기
 
 - [x] PR 날려보기
+AI 리뷰에 대한 코드 개선을 pull request 했습니다.
+
+<img src="images/aipr.png" width="400">
+
+
+
+초기 pull request입니다.
+
 <img src="images/pr.png" width="400">
 <img src="images/pr2.png" width="400">
 
@@ -121,7 +129,7 @@ AI 리뷰
 <img src="images/views.png" width="400">
 개선된 사항 
 
-
+AuthService 클래스를 추가해 뷰 함수와 비즈니스 로직을 분리하는 리팩토링을 시행했습니다.
 <img src="images/viewscode.png" width="400">
 
 ### Models
