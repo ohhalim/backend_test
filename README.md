@@ -74,6 +74,13 @@ JSON Web Token은 정보를 JSON형태로 안전하게 전송하기 위한 표�
 - [x] 백엔드 유닛 테스트 완성하기
 
 
+AI 리팩토링 이후 다시 한 유닛 테스트 와 에러사항 수정한 모습입니다.
+
+
+<img src="images/aipytest.png" width="400">
+<img src="images/aipytest2.png" width="400">
+
+
 포스트맨 확인
 
 
