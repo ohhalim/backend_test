@@ -111,7 +111,7 @@ def login(request):
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 
-# simplejwt로 했는데 이걸 넣어야하나..?
+# 유닛 테스트 이후 simplejwt로 바꿔서 했습니다.
 # class JWTManager:
 #     def __init__(self, secret_key: str, algorithm: str = "HS256"):
 #         self.secret_key = secret_key
