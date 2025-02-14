@@ -117,6 +117,13 @@ http://3.36.66.35:8000/swagger/
 
 AI 리뷰
 
+### Views
+<img src="images/views.png" width="400">
+개선된 사항 
+
+
+<img src="images/viewscode.png" width="400">
+
 ### Models
 <img src="images/models.png" width="400">
 개선된 사항
@@ -136,12 +143,6 @@ MinLengthValidator를 통한 동일한 닉네임이 없게 만들었습니다.
 
 <img src="images/serializerscode.png" width="400">
 
-### Views
-<img src="images/views.png" width="400">
-개선된 사항
-
-
-<img src="images/viewscode.png" width="400">
 
 ### 마무리
 
