@@ -38,10 +38,11 @@ class AuthService:
     method='post',
     request_body=openapi.Schema(
         type=openapi.TYPE_OBJECT,
-        required=['username', 'password', 'nickname'],
+        required=['username', 'password', 'password2', 'nickname'],  # password2 추가
         properties={
             'username': openapi.Schema(type=openapi.TYPE_STRING),
             'password': openapi.Schema(type=openapi.TYPE_STRING),
+            'password2': openapi.Schema(type=openapi.TYPE_STRING),  # password2 필드 추가
             'nickname': openapi.Schema(type=openapi.TYPE_STRING),
         }
     ),
